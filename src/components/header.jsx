@@ -1,9 +1,18 @@
 import React from 'react'
+import '../styles/header.css'
+import ThemeSwitcher from './header/themeSwitcher'
+import Animation from './header/animation'
+import HeaderText from './header/headerText'
 
-const header = () => {
+const Header = () => {
+
   return (
-    <div>header</div>
+    <div className='header'>
+      <ThemeSwitcher />
+      <Animation />
+      <HeaderText />
+    </div>
   )
 }
 
-export default header
+export default Header

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+.bg-dark {
+    --font-color-header: #fff;
+}
+
+.bg-light {
+    --font-color-header: #000;
+}
+
+.header-text {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: var(--font-color-header);
+    transition: color 0.5s ease-in-out;
+}
+
+.header-text-h1 {
+    opacity: 0;
+    margin-left: -3rem;
+    font-family: "Condiment", serif;
+    transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out;
+    font-size: clamp(1.3rem, 5vw, 4rem);
+}
+
+.header-text-h2 {
+    opacity: 0;
+    margin-left: 3rem;
+    font-family: "Farsan", serif;
+    transition: opacity 0.5s ease-in-out, margin 0.5s ease-in-out;
+    font-size: clamp(1rem, 3vw, 3rem);
+}
+
+.header-text_in {
+    opacity: 1;
+    margin-left: 0;
+}
+
+
+

@@ -1,0 +1,45 @@
+.bg-light {
+    --bg-color-header-from: #75b4eb;
+    --bg-color-header-to: #1e69de;
+}
+
+.bg-dark {
+    --bg-color-header-from: #383b3f;
+    --bg-color-header-to: #1c2431;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before,
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.header::before {
+    background: linear-gradient(to bottom, #75b4eb 0%, #1e69de 100%);
+    opacity: 1;
+}
+
+.header::after {
+    background: linear-gradient(to bottom, #383b3f 0%, #1c2431 100%);
+    opacity: 0;
+}
+
+/* Przełączanie motywu */
+.bg-dark .header::before {
+    opacity: 0;
+}
+
+.bg-dark .header::after {
+    opacity: 1;
+}
