@@ -1,6 +1,6 @@
 .bg-light {
-    --bg-color-header-from: #75b4eb;
-    --bg-color-header-to: #1e69de;
+    --bg-color-header-from: #dbeeff;
+    --bg-color-header-to: #a6c6f8;
 }
 
 .bg-dark {
@@ -26,12 +26,12 @@
 }
 
 .header::before {
-    background: linear-gradient(to bottom, #75b4eb 0%, #1e69de 100%);
+    background: linear-gradient(to bottom, #c2d3ff 0%, #b0a5d3 100%);
     opacity: 1;
 }
 
 .header::after {
-    background: linear-gradient(to bottom, #383b3f 0%, #1c2431 100%);
+    background: linear-gradient(to bottom, #2c2f38 0%, #1c2028 100%);
     opacity: 0;
 }
 

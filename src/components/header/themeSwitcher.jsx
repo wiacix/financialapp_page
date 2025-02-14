@@ -21,10 +21,6 @@ const ThemeSwitcher = () => {
         }
     }
 
-    setTimeout(() => {
-        document.querySelector('.theme-switcher').classList.add('theme-switcher_in')
-    }, 8000)
-
     return (
         <div className='theme-switcher' onClick={switchTheme}>
             <div className='theme-switcher__button' />
