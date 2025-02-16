@@ -1,0 +1,35 @@
+.main {
+    position: relative;
+    overflow: hidden;
+}
+
+.main::before,
+.main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.main::before {
+    background: linear-gradient(to top, #c2d3ff 0%, #b0a5d3 100%);
+    opacity: 1;
+}
+
+.main::after {
+    background: linear-gradient(to top, #2c2f38 0%, #1c2028 100%);
+    opacity: 0;
+}
+
+/* Przełączanie motywu */
+.bg-dark .main::before {
+    opacity: 0;
+}
+
+.bg-dark .main::after {
+    opacity: 1;
+}
