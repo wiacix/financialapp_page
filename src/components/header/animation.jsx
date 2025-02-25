@@ -47,7 +47,7 @@ const Animation = () => {
   return (
     <div className='animationBox'>
       <video autoPlay muted width="90%" id='animationHeader'>
-        <source src="/assets/headerAnim.webm" type="video/webm" />
+        <source src="./assets/headerAnim.webm" type="video/webm" />
         Twoja przeglądarka nie obsługuje tagu video.
       </video>
     </div>

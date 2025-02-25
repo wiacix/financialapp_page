@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/content.css'
+import * as GF from '../functions'
 
 export const ContentEle = (props) => {
     return (
@@ -10,7 +11,7 @@ export const ContentEle = (props) => {
                 <div className='content_ele_box_pictures'>
                     <img src={props.item.imgApp} alt={props.item.altApp} className='content_ele_box_img' />
                 </div>
-                <p>{props.item.p}</p>
+                <p>{GF.removeWidows(props.item.p)}</p>
                 <a className='read-more-container' href={props.item.href} target='_blank' rel="noreferrer">
                     <div>
                         <p className='read-more-text'>{props.item.pHref}</p>

@@ -52,6 +52,11 @@
     transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
+.slider_img:hover{
+    transform: scale(1.2);
+    z-index: 1000;
+}
+
 .slider_img_anim {
     transform: skew(3deg, 4deg) translateX(-5rem);
     opacity: 0;

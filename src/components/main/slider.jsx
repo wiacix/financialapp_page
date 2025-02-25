@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../../styles/slider.css'
 import { elements_slider } from '../../data/content';
 import SliderIndex from './slider_index';
+import * as GF from '../functions'
 
 const Slider = () => {
     const [currEle, setCurrEle] = useState(0);
@@ -39,7 +40,7 @@ const Slider = () => {
                     </button>
                     <div className='slider_box_text'>
                         <h2 className='slider_box_text_h2'>{width>=1300 ? elements_slider[currEle].header : elements_slider[currEle].m_header}</h2>
-                        <p className='slider_box_text_p'>{width>=1300 ? elements_slider[currEle].description : elements_slider[currEle].m_description}</p>
+                        <p className='slider_box_text_p'>{width>=1300 ? GF.removeWidows(elements_slider[currEle].description) : GF.removeWidows(elements_slider[currEle].m_description)}</p>
                     </div>
                     <SliderIndex elements={elements_slider.length} index={currEle} />
                 </div>
